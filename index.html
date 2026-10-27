@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Owen · Plaquinha, site e anúncio para pequenos negócios</title>
+<meta name="description" content="Plaquinha de avaliação, landing page, site e anúncios para pequenos negócios de todo o Brasil. A partir de R$ 120. Fale com a Owen no WhatsApp.">
+<meta property="og:title" content="Owen · Plaquinha, site e anúncio para pequenos negócios">
+<meta property="og:description" content="Plaquinha de avaliação R$ 120, landing R$ 120, site R$ 350 e anúncios. Tudo no seu nome, medido e mostrado no seu celular.">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Owen">
+<meta property="og:type" content="website">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Owen","url":"https://owenconsulting.com.br/","telephone":"+55 11 92751-5032","priceRange":"R$ 120 – R$ 1.400","areaServed":{"@type":"Country","name":"Brasil"}}</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;800&display=swap">
+<style>
+:root{--bg:#efeafc;--panel:#ffffff;--ink:#2a1640;--muted:#6c5d82;--me:#2a1640;--meink:#ffffff;--mint:#3fd0a4;--line:#ddd3f2;--font:"Rubik",system-ui,sans-serif;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#170d24;--panel:#231737;--ink:#f1eafc;--muted:#b3a5c9;--me:#3fd0a4;--meink:#10241d;--line:#3a2b52;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.5 var(--font)}
+.wrap{max-width:680px;margin:0 auto;padding:0 16px 120px}
+.head{display:flex;align-items:center;gap:12px;padding:18px 0;border-bottom:1px solid var(--line)}
+.av{width:46px;height:46px;border-radius:50%;background:var(--ink);color:var(--bg);display:grid;place-items:center;font:800 20px/1 var(--font);flex:none}
+.head b{display:block;font-weight:700}
+.head small{color:var(--muted)}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--mint);margin-right:6px}
+h1{font:800 clamp(30px,7vw,46px)/1.05 var(--font);letter-spacing:-.02em;margin:26px 0 6px;text-wrap:balance}
+.intro{color:var(--muted);margin:0 0 20px}
+.chat{display:flex;flex-direction:column;gap:10px}
+.b{max-width:86%;padding:12px 16px;border-radius:18px;background:var(--panel);border:1px solid var(--line);box-shadow:0 2px 0 var(--line)}
+.b.them{border-bottom-left-radius:6px}
+.b .price{display:block;font:800 26px/1.1 var(--font);margin-top:6px}
+.b ul{margin:6px 0 0;padding-left:18px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end;margin-top:4px}
+.chip{font:500 15px/1 var(--font);padding:12px 16px;border-radius:999px;border:2px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;text-decoration:none}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.chip:focus-visible,.send:focus-visible{outline:3px solid var(--mint);outline-offset:2px}
+.trust{margin-top:34px;display:grid;gap:10px}
+.trust div{display:flex;gap:12px;align-items:flex-start;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px}
+.trust i{font-style:normal;font-weight:800;color:var(--mint);flex:none}
+.bar{position:fixed;left:0;right:0;bottom:0;background:var(--bg);border-top:1px solid var(--line);padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));z-index:5}
+.bar .in{max-width:680px;margin:0 auto;display:flex;gap:10px;align-items:center}
+.preview{flex:1;min-width:0;background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:12px 16px;font-size:14.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.send{flex:none;background:var(--mint);color:#10241d;font:800 15.5px/1 var(--font);text-decoration:none;padding:14px 18px;border-radius:999px}
+footer{margin-top:30px;font-size:13.5px;color:var(--muted);text-align:center}
+@media (prefers-reduced-motion:no-preference){.b.new{animation:pop .25s ease-out}@keyframes pop{from{transform:translateY(6px)}to{transform:none}}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="head"><div class="av" aria-hidden="true">O</div><div><b>Owen</b><small><span class="dot"></span>Sites, plaquinhas e anúncios · todo o Brasil</small></div></div>
+<h1>Me conta o que você tem que eu te digo o que resolve.</h1>
+<p class="intro">Escolha uma opção. No fim, sua mensagem sai pronta para o WhatsApp da Owen.</p>
+<div class="chips" style="justify-content:flex-start;margin-bottom:18px"><a class="chip" href="#chat">Tenho um comércio</a><a class="chip" href="https://wa.me/5511927515032?text=Ol%C3%A1%2C%20Owen%21%20Quero%20crescer%20minha%20empresa%20e%20agendar%20o%20diagn%C3%B3stico%20de%20R%24%20150." target="_blank" rel="noopener">Quero crescer minha empresa</a></div>
+<div class="chat" id="chat" aria-live="polite">
+  <div class="b them">Oi! Aqui é a Owen. Qual é o seu negócio?</div>
+  <div class="chips" role="group" aria-label="Tipo de negócio" id="c1">
+    <button class="chip" data-v="Loja ou comércio" aria-pressed="true">Loja ou comércio</button>
+    <button class="chip" data-v="Restaurante ou lanchonete" aria-pressed="false">Restaurante</button>
+    <button class="chip" data-v="Clínica ou consultório" aria-pressed="false">Clínica</button>
+    <button class="chip" data-v="Barbearia ou salão" aria-pressed="false">Barbearia</button>
+  </div>
+  <div class="b them">E o que você mais quer agora?</div>
+  <div class="chips" role="group" aria-label="Objetivo" id="c2">
+    <button class="chip" data-k="aval" aria-pressed="true">Mais avaliação no Google</button>
+    <button class="chip" data-k="pag" aria-pressed="false">Uma página com WhatsApp</button>
+    <button class="chip" data-k="site" aria-pressed="false">Site completo</button>
+    <button class="chip" data-k="midia" aria-pressed="false">Redes e anúncios</button>
+  </div>
+  <div class="b them new" id="ans"></div>
+</div>
+<div class="trust">
+  <div><i>✓</i><span>Domínio, hospedagem e contas de anúncio ficam no seu nome.</span></div>
+  <div><i>✓</i><span>Entrega mostrada no seu celular, funcionando.</span></div>
+  <div><i>✓</i><span>Nenhum anúncio vai ao ar sem medir de onde veio cada contato.</span></div>
+</div>
+<footer>Owen · Atendimento em todo o Brasil · WhatsApp (11) 92751-5032</footer>
+</div>
+<div class="bar"><div class="in"><div class="preview" id="pv"></div><a class="send" id="send" href="https://wa.me/5511927515032" target="_blank" rel="noopener">Enviar no WhatsApp</a></div></div>
+<script>
+const offers={
+ aval:{t:'Plaquinha de avaliação',p:'R$ 120',d:['QR e chip NFC no seu balcão','Cliente encosta o celular e avalia no Google','Troca de destino sem reimprimir']},
+ pag:{t:'Plaquinha + landing page',p:'R$ 200',d:['Página com até 5 seções, feita para o celular','Botão de WhatsApp em destaque','A plaquinha aponta para ela (só a landing: R$ 120)']},
+ site:{t:'Site institucional',p:'R$ 350',d:['Até 6 páginas e Perfil da Empresa no Google','GA4 e Pixel ligados','Diagnóstico de antes e de depois']},
+ midia:{t:'Redes + anúncios',p:'R$ 1.400/mês',d:['15 posts no mês','Gestão de tráfego pago, mais 5% sobre a verba','Verba a partir de R$ 1.500, paga por você na plataforma']}};
+let negocio='Loja ou comércio',obj='aval';
+const ans=document.getElementById('ans'),pv=document.getElementById('pv'),send=document.getElementById('send');
+function render(){const o=offers[obj];ans.innerHTML='';const s=document.createElement('span');s.textContent='Para '+negocio.toLowerCase()+', o caminho é: '+o.t+'.';const pr=document.createElement('span');pr.className='price';pr.textContent=o.p;const ul=document.createElement('ul');o.d.forEach(x=>{const li=document.createElement('li');li.textContent=x;ul.appendChild(li)});ans.append(s,pr,ul);
+ ans.classList.remove('new');void ans.offsetWidth;ans.classList.add('new');
+ const msg=`Olá, Owen! Tenho ${negocio.toLowerCase()} e quero: ${o.t} (${o.p}).`;pv.textContent=msg;send.href='https://wa.me/5511927515032?text='+encodeURIComponent(msg);}
+function group(id,fn){const bs=[...document.querySelectorAll('#'+id+' .chip')];bs.forEach(b=>b.addEventListener('click',()=>{bs.forEach(x=>x.setAttribute('aria-pressed',x===b));fn(b);render();}));}
+group('c1',b=>negocio=b.dataset.v);group('c2',b=>obj=b.dataset.k);render();
+window.dataLayer=window.dataLayer||[];
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="wa.me"]');if(!a)return;
+var t='';try{t=decodeURIComponent((a.href.split('text=')[1]||'')).slice(0,120)}catch(_){}
+window.dataLayer.push({event:'clique_whatsapp',servico:t,pagina:document.title});
+if(typeof window.gtag==='function')window.gtag('event','clique_whatsapp',{servico:t});
+if(typeof window.fbq==='function')window.fbq('track','Contact',{content_name:t});},true);
+</script>
+</body>
+</html>
