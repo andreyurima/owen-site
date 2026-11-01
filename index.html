@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Owen · Conheça o Owl Know</title>
-<meta name="description" content="Responda 2 perguntas para o Owl Know e descubra por onde seu negócio começa: diagnóstico, um post por dia ou site para comércio. Fale com a Owen no WhatsApp.">
-<meta property="og:title" content="Owen · Conheça o Owl Know">
+<title>Owen · Conheça o Owl</title>
+<meta name="description" content="Responda 2 perguntas para o Owl e descubra por onde seu negócio começa: diagnóstico, um post por dia ou site para comércio. Fale com a Owen no WhatsApp.">
+<meta property="og:title" content="Owen · Conheça o Owl">
 <meta property="og:description" content="A coruja da Owen te diz por onde seu negócio começa. Diagnóstico, um post por dia e site para comércio.">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Owen">
@@ -16,7 +16,6 @@
 <meta name="theme-color" content="#06231d">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="canonical" href="https://andreyurima.github.io/owen-site/">
-<link rel="modulepreload" href="vendor/three.module.min.js">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Owen","description":"Agência de marketing para pequenos negócios: diagnóstico, um post por dia e site para comércio.","url":"https://andreyurima.github.io/owen-site/","image":"https://andreyurima.github.io/owen-site/og.png","logo":"https://andreyurima.github.io/owen-site/owl-know.png","telephone":"+55 11 92751-5032","sameAs":["https://www.instagram.com/owenstrategy/"],"areaServed":{"@type":"Country","name":"Brasil"}}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,15 +35,9 @@ header{position:relative;z-index:2;max-width:1160px;margin:0 auto;padding:18px 1
 .ig svg{width:18px;height:18px}
 .hero{position:relative;z-index:1;max-width:1160px;margin:0 auto;padding:0 16px 40px;display:grid;gap:8px}
 @media (min-width:900px){.hero{grid-template-columns:1.05fr .95fr;align-items:center;min-height:calc(100vh - 80px);padding-bottom:60px}}
-.stage{position:relative;height:min(62vh,560px);min-height:360px}
-.stage canvas{position:absolute;inset:0;width:100%;height:100%;cursor:grab;touch-action:pan-y;-webkit-mask-image:linear-gradient(#000 78%,transparent);mask-image:linear-gradient(#000 78%,transparent)}
-.stage canvas:active{cursor:grabbing}
-.stage .fallback{position:absolute;inset:0;margin:auto;max-height:100%;max-width:100%;object-fit:contain;display:none}
-.stage.no3d .fallback{display:block}
-.stage.no3d canvas{display:none}
-.hint{position:absolute;left:50%;bottom:6px;transform:translateX(-50%);font-size:13px;color:var(--muted);display:flex;gap:6px;align-items:center;white-space:nowrap}
-.hint b{color:var(--lime)}
-.name{position:absolute;top:8px;left:50%;transform:translateX(-50%);font:900 13px/1 var(--font);letter-spacing:.18em;text-transform:uppercase;color:var(--lime);background:rgba(6,35,29,.6);padding:8px 12px;border-radius:999px;border:1px solid rgba(227,239,38,.35)}
+.stage{position:relative;display:grid;place-items:end center;height:min(62vh,560px);min-height:320px}
+.owlimg{max-height:100%;width:auto;filter:drop-shadow(0 30px 60px rgba(0,0,0,.45));-webkit-mask-image:linear-gradient(#000 82%,transparent);mask-image:linear-gradient(#000 82%,transparent);animation:float 6s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-8px)}}
 h1{font:900 clamp(40px,7.4vw,78px)/.95 var(--font);letter-spacing:-.035em;margin:0 0 18px;color:var(--cream)}
 h1 em{font-style:normal;color:var(--lime)}
 .chat{display:flex;flex-direction:column;gap:10px;min-height:250px}
@@ -97,14 +90,9 @@ footer .links{display:flex;gap:10px;flex-wrap:wrap}
 
 <main>
 <div class="hero">
-  <div class="stage" id="stage">
-    <span class="name">Owl Know</span>
-    <canvas id="owl" aria-label="Owl Know, a coruja da Owen, em 3D. Arraste para girar."></canvas>
-    <img class="fallback" src="owl-know.png" alt="Owl Know, a coruja da Owen" width="600" height="750">
-    <span class="hint" id="hint">Arraste para <b>girar</b> · toque duas vezes</span>
-  </div>
+  <div class="stage"><img class="owlimg" src="owl-know.png" alt="Owl, a coruja da Owen" width="600" height="750"></div>
   <div>
-    <h1>Oi, eu sou o <em>Owl Know.</em></h1>
+    <h1>Oi, eu sou o <em>Owl.</em></h1>
     <div class="chat" id="chat" aria-live="polite"></div>
   </div>
 </div>
@@ -132,14 +120,7 @@ footer .links{display:flex;gap:10px;flex-wrap:wrap}
 </svg>
 
 <script type="module">
-let owl = { react(){} };
-const stage = document.getElementById('stage');
-try {
-  const t = document.createElement('canvas');
-  if (!(t.getContext('webgl2') || t.getContext('webgl'))) throw new Error('sem webgl');
-  const { createOwl } = await import('./owl3d.js');
-  owl = createOwl(document.getElementById('owl'));
-} catch (e) { stage.classList.add('no3d'); document.getElementById('hint').hidden = true; }
+const owl = { react(){} };
 
 const WA = '5511927515032';
 const chat = document.getElementById('chat');
