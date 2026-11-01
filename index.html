@@ -3,183 +3,214 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Owen · Marketing simples para pequenos negócios</title>
-<meta name="description" content="A Owen ajuda pequenos negócios a serem encontrados e a vender mais: diagnóstico do Instagram e do Google, um post por dia e site para comércio. Fale pelo WhatsApp.">
-<meta property="og:title" content="Owen · Marketing simples para pequenos negócios">
-<meta property="og:description" content="Diagnóstico do Instagram e do Google, um post por dia e site para comércio. Fale com a Owen no WhatsApp.">
+<title>Owen · Conheça o Owl Know</title>
+<meta name="description" content="Responda 2 perguntas para o Owl Know e descubra por onde seu negócio começa: diagnóstico, um post por dia ou site para comércio. Fale com a Owen no WhatsApp.">
+<meta property="og:title" content="Owen · Conheça o Owl Know">
+<meta property="og:description" content="A coruja da Owen te diz por onde seu negócio começa. Diagnóstico, um post por dia e site para comércio.">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Owen">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://andreyurima.github.io/owen-site/">
 <meta property="og:image" content="https://andreyurima.github.io/owen-site/og.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#0e2419">
+<meta name="theme-color" content="#06231d">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="canonical" href="https://andreyurima.github.io/owen-site/">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Owen","description":"Agência de marketing para pequenos negócios: diagnóstico do Instagram e do Google, um post por dia e site para comércio.","url":"https://andreyurima.github.io/owen-site/","image":"https://andreyurima.github.io/owen-site/og.png","telephone":"+55 11 92751-5032","sameAs":["https://www.instagram.com/owenstrategy/"],"areaServed":{"@type":"Country","name":"Brasil"}}</script>
+<link rel="modulepreload" href="vendor/three.module.min.js">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Owen","description":"Agência de marketing para pequenos negócios: diagnóstico, um post por dia e site para comércio.","url":"https://andreyurima.github.io/owen-site/","image":"https://andreyurima.github.io/owen-site/og.png","logo":"https://andreyurima.github.io/owen-site/owl-know.png","telephone":"+55 11 92751-5032","sameAs":["https://www.instagram.com/owenstrategy/"],"areaServed":{"@type":"Country","name":"Brasil"}}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&display=swap">
 <style>
-:root{--deep:#0e2419;--forest:#1f5a3d;--lime:#d6f23a;--white:#ffffff;--bg:#f6f8f2;--panel:#ffffff;--ink:#0e2419;--muted:#4d6357;--line:#dde6d8;--font:"Rubik",system-ui,sans-serif;color-scheme:light}
+:root{--bg:#06231d;--bg2:#0b2f26;--suit:#0f4a33;--cream:#d6cdbe;--lime:#e3ef26;--ink:#f4f1e8;--muted:#9fb3a9;--line:rgba(214,205,190,.14);--font:"Archivo",system-ui,sans-serif;color-scheme:dark}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.55 var(--font)}
+body{margin:0;background:var(--bg);color:var(--ink);font:500 17px/1.45 var(--font);overflow-x:hidden}
 a{color:inherit}
-.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
-header.top{background:var(--deep);color:var(--white)}
-nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 0}
-.brand{display:flex;align-items:center;gap:10px;font:800 22px/1 var(--font);text-decoration:none;color:var(--white)}
-.brand svg{width:38px;height:38px;flex:none}
-nav .links{display:flex;gap:18px;font-size:15px}
-nav .links a{text-decoration:none;opacity:.85}
-nav .links a:hover{opacity:1}
-@media (max-width:640px){nav .links{display:none}}
-.hero{display:grid;gap:28px;align-items:center;padding:28px 0 56px}
-@media (min-width:820px){.hero{grid-template-columns:1.15fr .85fr;padding:40px 0 72px}}
-.hero h1{font:800 clamp(34px,7vw,56px)/1.04 var(--font);letter-spacing:-.02em;margin:0 0 16px;text-wrap:balance}
-.hero h1 em{font-style:normal;color:var(--lime)}
-.hero p{font-size:19px;opacity:.9;margin:0 0 26px;max-width:34em}
-.cta{display:flex;flex-wrap:wrap;gap:12px}
-.btn{display:inline-flex;align-items:center;gap:10px;font:700 16.5px/1 var(--font);padding:16px 22px;border-radius:999px;text-decoration:none;border:2px solid transparent}
-.btn.wa{background:var(--lime);color:var(--deep)}
-.btn.ig{border-color:currentColor;color:inherit}
-.btn svg{width:20px;height:20px;flex:none}
-.btn:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
-.owl{justify-self:center;width:min(360px,80%);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 50% 40%,var(--forest),var(--deep) 70%);display:grid;place-items:center;overflow:hidden;border:4px solid var(--lime)}
-.owl img{width:100%;height:100%;object-fit:cover}
-.owl svg{width:70%;height:70%}
-section{padding:56px 0}
-h2{font:800 clamp(26px,4.5vw,36px)/1.1 var(--font);letter-spacing:-.01em;margin:0 0 10px}
-.lead{color:var(--muted);margin:0 0 28px;max-width:40em}
-.grid{display:grid;gap:16px}
-@media (min-width:760px){.grid.three{grid-template-columns:repeat(3,1fr)}.grid.two{grid-template-columns:1fr 1fr}}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;flex-direction:column}
-.card .ic{width:46px;height:46px;border-radius:12px;background:var(--deep);color:var(--lime);display:grid;place-items:center;margin-bottom:14px}
-.card .ic svg{width:24px;height:24px}
-.card h3{margin:0 0 8px;font:700 20px/1.2 var(--font)}
-.card p{margin:0 0 16px;color:var(--muted)}
-.card a.more{margin-top:auto;font-weight:700;color:var(--forest);text-decoration:none}
-.card a.more:hover{text-decoration:underline}
-.about{background:var(--deep);color:var(--white)}
-.about .lead{color:#c7d6cc}
-.about ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
-.about li{display:flex;gap:12px;align-items:flex-start}
-.about li b{color:var(--lime);flex:none}
-.case{border-left:4px solid var(--lime)}
-.case small{display:block;font-weight:700;color:var(--forest);text-transform:uppercase;letter-spacing:.06em;font-size:12.5px;margin-bottom:6px}
-.final{text-align:center}
-.final .cta{justify-content:center}
-.final .btn.ig{color:var(--ink)}
-footer{border-top:1px solid var(--line);padding:24px 0 40px;font-size:14px;color:var(--muted);text-align:center}
-.float{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 6px 18px rgba(0,0,0,.25);z-index:9}
+button{font:inherit}
+.grain{position:fixed;inset:0;pointer-events:none;z-index:0;background:radial-gradient(60vmax 60vmax at 75% 20%,rgba(227,239,38,.10),transparent 60%),radial-gradient(50vmax 50vmax at 10% 90%,rgba(15,74,51,.55),transparent 60%)}
+header{position:relative;z-index:2;max-width:1160px;margin:0 auto;padding:18px 16px;display:flex;justify-content:space-between;align-items:center}
+.logo{display:flex;gap:10px;align-items:center;font:900 22px/1 var(--font);letter-spacing:-.02em;text-decoration:none}
+.logo img{width:36px;height:36px;border-radius:50%;object-fit:cover;object-position:50% 22%;background:var(--suit);border:2px solid var(--lime)}
+.ig{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:15px;padding:10px 14px;border:1.5px solid var(--line);border-radius:999px}
+.ig svg{width:18px;height:18px}
+.hero{position:relative;z-index:1;max-width:1160px;margin:0 auto;padding:0 16px 40px;display:grid;gap:8px}
+@media (min-width:900px){.hero{grid-template-columns:1.05fr .95fr;align-items:center;min-height:calc(100vh - 80px);padding-bottom:60px}}
+.stage{position:relative;height:min(62vh,560px);min-height:360px}
+.stage canvas{position:absolute;inset:0;width:100%;height:100%;cursor:grab;touch-action:pan-y;-webkit-mask-image:linear-gradient(#000 78%,transparent);mask-image:linear-gradient(#000 78%,transparent)}
+.stage canvas:active{cursor:grabbing}
+.stage .fallback{position:absolute;inset:0;margin:auto;max-height:100%;max-width:100%;object-fit:contain;display:none}
+.stage.no3d .fallback{display:block}
+.stage.no3d canvas{display:none}
+.hint{position:absolute;left:50%;bottom:6px;transform:translateX(-50%);font-size:13px;color:var(--muted);display:flex;gap:6px;align-items:center;white-space:nowrap}
+.hint b{color:var(--lime)}
+.name{position:absolute;top:8px;left:50%;transform:translateX(-50%);font:900 13px/1 var(--font);letter-spacing:.18em;text-transform:uppercase;color:var(--lime);background:rgba(6,35,29,.6);padding:8px 12px;border-radius:999px;border:1px solid rgba(227,239,38,.35)}
+h1{font:900 clamp(40px,7.4vw,78px)/.95 var(--font);letter-spacing:-.035em;margin:0 0 18px;color:var(--cream)}
+h1 em{font-style:normal;color:var(--lime)}
+.chat{display:flex;flex-direction:column;gap:10px;min-height:250px}
+.msg{display:flex;gap:10px;align-items:flex-end;max-width:520px;animation:in .35s cubic-bezier(.2,.9,.3,1.2) both}
+.msg img{width:34px;height:34px;border-radius:50%;object-fit:cover;object-position:50% 22%;flex:none;background:var(--suit)}
+.bubble{background:var(--bg2);border:1px solid var(--line);padding:12px 16px;border-radius:20px 20px 20px 6px;font-size:18px}
+.me{align-self:flex-end;background:var(--lime);color:var(--bg);border-radius:20px 20px 6px 20px;padding:10px 16px;font-weight:700;animation:in .25s ease-out both}
+.chips{display:flex;flex-wrap:wrap;gap:8px;padding-left:44px;animation:in .35s .1s ease-out both}
+.chip{background:transparent;color:var(--ink);border:1.5px solid rgba(227,239,38,.55);padding:11px 15px;border-radius:999px;cursor:pointer;font-weight:700;font-size:15.5px;transition:transform .15s,background .15s,color .15s}
+.chip:hover{background:var(--lime);color:var(--bg);transform:translateY(-2px)}
+.chip:focus-visible,.cta:focus-visible,.card:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
+.result{margin-left:44px;max-width:476px;background:linear-gradient(140deg,var(--suit),var(--bg2));border:1px solid rgba(227,239,38,.4);border-radius:22px;padding:20px;animation:pop .5s cubic-bezier(.2,.9,.3,1.3) both}
+.result small{color:var(--lime);font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:12px}
+.result h3{font:900 30px/1 var(--font);letter-spacing:-.02em;margin:6px 0 14px;color:var(--cream)}
+.cta{display:inline-flex;align-items:center;gap:10px;background:var(--lime);color:var(--bg);font:800 17px/1 var(--font);padding:16px 22px;border-radius:999px;text-decoration:none;box-shadow:0 10px 30px -10px rgba(227,239,38,.6);transition:transform .15s}
+.cta:hover{transform:translateY(-2px) scale(1.02)}
+.cta svg{width:22px;height:22px}
+.again{background:none;border:0;color:var(--muted);text-decoration:underline;cursor:pointer;margin-left:14px;font-size:15px}
+@keyframes in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes pop{from{opacity:0;transform:scale(.9) translateY(10px)}to{opacity:1;transform:none}}
+.typing span{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--muted);margin:0 2px;animation:dot 1s infinite}
+.typing span:nth-child(2){animation-delay:.15s}.typing span:nth-child(3){animation-delay:.3s}
+@keyframes dot{0%,80%,100%{opacity:.25;transform:none}40%{opacity:1;transform:translateY(-3px)}}
+section.svc{position:relative;z-index:1;max-width:1160px;margin:0 auto;padding:40px 16px 70px}
+.svc h2{font:900 clamp(30px,5vw,48px)/1 var(--font);letter-spacing:-.03em;margin:0 0 26px;color:var(--cream)}
+.svc h2 em{font-style:normal;color:var(--lime)}
+.cards{display:grid;gap:16px;perspective:900px}
+@media (min-width:760px){.cards{grid-template-columns:repeat(3,1fr)}}
+.card{position:relative;display:block;text-decoration:none;background:var(--bg2);border:1px solid var(--line);border-radius:24px;padding:24px;min-height:220px;transform-style:preserve-3d;transition:transform .2s ease-out,border-color .2s;overflow:hidden}
+.card:hover{border-color:rgba(227,239,38,.6)}
+.card .n{font:900 64px/1 var(--font);color:transparent;-webkit-text-stroke:1.5px rgba(227,239,38,.55);transform:translateZ(30px)}
+.card h3{font:900 26px/1.05 var(--font);margin:18px 0 8px;letter-spacing:-.02em;transform:translateZ(40px);color:var(--cream)}
+.card p{margin:0;color:var(--muted);transform:translateZ(20px)}
+.card .go{position:absolute;right:20px;top:22px;width:44px;height:44px;border-radius:50%;background:var(--lime);color:var(--bg);display:grid;place-items:center;font-weight:900;transform:translateZ(50px);transition:transform .2s}
+.card:hover .go{transform:translateZ(50px) rotate(-45deg)}
+.card .shine{position:absolute;inset:0;pointer-events:none;background:radial-gradient(300px 300px at var(--mx,50%) var(--my,50%),rgba(227,239,38,.14),transparent 60%)}
+footer{position:relative;z-index:1;border-top:1px solid var(--line);max-width:1160px;margin:0 auto;padding:28px 16px 100px;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;color:var(--muted);font-size:14px}
+footer .links{display:flex;gap:10px;flex-wrap:wrap}
+.float{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:9;width:60px;height:60px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.35)}
 .float svg{width:30px;height:30px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
-<header class="top">
- <div class="wrap">
-  <nav>
-   <a class="brand" href="#"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#owlmark"/></svg>Owen</a>
-   <div class="links"><a href="#servicos">Serviços</a><a href="#casos">Casos</a><a href="#sobre">Quem somos</a></div>
-  </nav>
-  <div class="hero">
-   <div>
-    <h1>Seu negócio <em>encontrado</em> no Google e no Instagram.</h1>
-    <p>A Owen cuida do marketing de pequenos negócios em linguagem simples: mostra o que está travando, posta por você todo dia e coloca seu comércio na internet.</p>
-    <div class="cta">
-     <a class="btn wa" href="https://wa.me/5511927515032?text=Ol%C3%A1%2C%20Owen%21%20Quero%20um%20diagn%C3%B3stico%20do%20meu%20neg%C3%B3cio." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#wa"/></svg>Falar no WhatsApp</a>
-     <a class="btn ig" href="https://www.instagram.com/owenstrategy/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ig"/></svg>@owenstrategy</a>
-    </div>
-   </div>
-   <div class="owl"><img src="owl.png" alt="Coruja da Owen" width="360" height="360" onerror="this.replaceWith(document.getElementById('owlfallback').content.cloneNode(true))"></div>
-  </div>
- </div>
+<div class="grain" aria-hidden="true"></div>
+<header>
+  <a class="logo" href="#"><img src="owl-know.png" alt="">Owen</a>
+  <a class="ig" href="https://www.instagram.com/owenstrategy/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-ig"/></svg>@owenstrategy</a>
 </header>
 
 <main>
-<section id="servicos">
- <div class="wrap">
-  <h2>O que a Owen faz</h2>
-  <p class="lead">Três serviços, do primeiro passo ao dia a dia. Você escolhe por onde começar.</p>
-  <div class="grid three">
-   <div class="card">
-    <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></div>
-    <h3>Diagnóstico</h3>
-    <p>A Owen olha seu Google, seu Instagram e seu site e te diz, em poucas linhas, o que fazer primeiro para ser encontrado e receber mais contatos.</p>
-    <a class="more" href="https://wa.me/5511927515032?text=Ol%C3%A1%2C%20Owen%21%20Quero%20um%20diagn%C3%B3stico%20do%20meu%20neg%C3%B3cio." target="_blank" rel="noopener">Quero um diagnóstico →</a>
-   </div>
-   <div class="card">
-    <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="17" rx="3"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></div>
-    <h3>Um post por dia</h3>
-    <p>Seu Instagram ativo todos os dias, com roteiro pronto e a cara do seu negócio. Você aprova e a Owen cuida do resto.</p>
-    <a class="more" href="https://wa.me/5511927515032?text=Ol%C3%A1%2C%20Owen%21%20Quero%20saber%20do%20um%20post%20por%20dia." target="_blank" rel="noopener">Quero postar todo dia →</a>
-   </div>
-   <div class="card">
-    <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 10 12 3l9 7v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M9 21v-6h6v6"/></svg></div>
-    <h3>Site para comércio</h3>
-    <p>Uma página simples, feita para o celular, com seus produtos, endereço e botão de WhatsApp. No seu nome e pronta para aparecer no Google.</p>
-    <a class="more" href="https://wa.me/5511927515032?text=Ol%C3%A1%2C%20Owen%21%20Quero%20um%20site%20para%20o%20meu%20com%C3%A9rcio." target="_blank" rel="noopener">Quero um site →</a>
-   </div>
+<div class="hero">
+  <div class="stage" id="stage">
+    <span class="name">Owl Know</span>
+    <canvas id="owl" aria-label="Owl Know, a coruja da Owen, em 3D. Arraste para girar."></canvas>
+    <img class="fallback" src="owl-know.png" alt="Owl Know, a coruja da Owen" width="600" height="750">
+    <span class="hint" id="hint">Arraste para <b>girar</b> · toque duas vezes</span>
   </div>
- </div>
-</section>
-
-<section id="casos" style="padding-top:0">
- <div class="wrap">
-  <h2>Casos</h2>
-  <p class="lead">Alguns negócios que a Owen já acompanha.</p>
-  <div class="grid two">
-   <div class="card case"><small>Escritório de advocacia</small><h3>Perfil no Google do zero</h3><p>Criamos o Perfil da Empresa no Google e um kit de mensagens para o escritório pedir avaliações a clientes e amigos.</p></div>
-   <div class="card case"><small>Comércios de bairro</small><h3>Avaliação no balcão</h3><p>Açougue, casa de bebidas e loja com plaquinha de avaliação: o cliente encosta o celular e avalia no Google na hora.</p></div>
-   <div class="card case"><small>Profissional de saúde</small><h3>Um vídeo por semana</h3><p>Roteiro pronto e calendário de conteúdo para um estudante de psicologia crescer no Instagram com constância.</p></div>
-   <div class="card case"><small>Criadora de conteúdo</small><h3>Calendário do mês</h3><p>Carrosséis e plano mensal para uma influenciadora ganhar autonomia e postar com estratégia.</p></div>
-  </div>
- </div>
-</section>
-
-<section id="sobre" class="about">
- <div class="wrap grid two" style="align-items:center">
   <div>
-   <h2>Quem é a Owen</h2>
-   <p class="lead">A Owen é uma agência de marketing para pequenos e médios negócios. A coruja é o nosso jeito de trabalhar: olhar com atenção antes de agir, e explicar tudo em linguagem simples.</p>
+    <h1>Oi, eu sou o <em>Owl Know.</em></h1>
+    <div class="chat" id="chat" aria-live="polite"></div>
   </div>
-  <ul>
-   <li><b>✓</b><span>Atendimento pelo WhatsApp, de onde você estiver.</span></li>
-   <li><b>✓</b><span>Contas, domínio e perfis ficam no seu nome.</span></li>
-   <li><b>✓</b><span>Você vê o resultado no seu celular, funcionando.</span></li>
-  </ul>
- </div>
-</section>
+</div>
 
-<section class="final">
- <div class="wrap">
-  <h2>Vamos conversar?</h2>
-  <p class="lead" style="margin-left:auto;margin-right:auto">Mande uma mensagem e a Owen responde pelo WhatsApp.</p>
-  <div class="cta">
-   <a class="btn wa" href="https://wa.me/5511927515032?text=Ol%C3%A1%2C%20Owen%21%20Vim%20pelo%20site." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#wa"/></svg>WhatsApp (11) 92751-5032</a>
-   <a class="btn ig" href="https://www.instagram.com/owenstrategy/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ig"/></svg>Instagram</a>
+<section class="svc" id="servicos">
+  <h2>O que a <em>Owen</em> faz.</h2>
+  <div class="cards">
+    <a class="card" data-react="tilt" href="https://wa.me/5511927515032?text=Oi%2C%20Owen%21%20Quero%20um%20diagn%C3%B3stico%20do%20meu%20neg%C3%B3cio." target="_blank" rel="noopener"><span class="shine"></span><span class="go">→</span><div class="n">01</div><h3>Diagnóstico</h3><p>Onde seu negócio trava no Google, no Instagram e no site.</p></a>
+    <a class="card" data-react="nod" href="https://wa.me/5511927515032?text=Oi%2C%20Owen%21%20Quero%20um%20post%20por%20dia%20no%20meu%20Instagram." target="_blank" rel="noopener"><span class="shine"></span><span class="go">→</span><div class="n">02</div><h3>Um post por dia</h3><p>Seu Instagram vivo todo dia, com roteiro pronto.</p></a>
+    <a class="card" data-react="spin" href="https://wa.me/5511927515032?text=Oi%2C%20Owen%21%20Quero%20um%20site%20para%20o%20meu%20com%C3%A9rcio." target="_blank" rel="noopener"><span class="shine"></span><span class="go">→</span><div class="n">03</div><h3>Site para comércio</h3><p>Uma página no seu nome, feita para o celular e para o Google.</p></a>
   </div>
- </div>
 </section>
 </main>
 
-<footer><div class="wrap">Owen · Marketing para pequenos negócios · <a href="https://wa.me/5511927515032" target="_blank" rel="noopener">(11) 92751-5032</a> · <a href="https://www.instagram.com/owenstrategy/" target="_blank" rel="noopener">@owenstrategy</a></div></footer>
+<footer>
+  <span>Owen · marketing para pequenos negócios</span>
+  <span class="links"><a class="ig" href="https://wa.me/5511927515032" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>(11) 92751-5032</a><a class="ig" href="https://www.instagram.com/owenstrategy/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-ig"/></svg>Instagram</a></span>
+</footer>
 
-<a class="float" href="https://wa.me/5511927515032?text=Ol%C3%A1%2C%20Owen%21%20Vim%20pelo%20site." target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24"><use href="#wa"/></svg></a>
+<a class="float" href="https://wa.me/5511927515032?text=Oi%2C%20Owen%21%20Vim%20pelo%20site." target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg></a>
 
-<template id="owlfallback"><svg viewBox="0 0 64 64" role="img" aria-label="Coruja da Owen"><use href="#owlmark"/></svg></template>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
- <symbol id="owlmark" viewBox="0 0 64 64"><path d="M14 10l8 8a18 18 0 0 1 20 0l8-8v26a18 18 0 0 1-36 0z" fill="#1f5a3d"/><circle cx="24" cy="30" r="8" fill="#fff"/><circle cx="40" cy="30" r="8" fill="#fff"/><circle cx="24" cy="30" r="4" fill="#d6f23a"/><circle cx="40" cy="30" r="4" fill="#d6f23a"/><circle cx="24" cy="30" r="1.8" fill="#0e2419"/><circle cx="40" cy="30" r="1.8" fill="#0e2419"/><path d="M29 38l3 5 3-5z" fill="#d6f23a"/></symbol>
- <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3z"/></symbol>
- <symbol id="ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></g></symbol>
+ <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3z"/></symbol>
+ <symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></g></symbol>
 </svg>
-<script>
-window.dataLayer=window.dataLayer||[];
-document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="wa.me"]');if(!a)return;
-var t='';try{t=decodeURIComponent((a.href.split('text=')[1]||'')).slice(0,120)}catch(_){}
-window.dataLayer.push({event:'clique_whatsapp',servico:t});
-if(typeof window.gtag==='function')window.gtag('event','clique_whatsapp',{servico:t});},true);
+
+<script type="module">
+let owl = { react(){} };
+const stage = document.getElementById('stage');
+try {
+  const t = document.createElement('canvas');
+  if (!(t.getContext('webgl2') || t.getContext('webgl'))) throw new Error('sem webgl');
+  const { createOwl } = await import('./owl3d.js');
+  owl = createOwl(document.getElementById('owl'));
+} catch (e) { stage.classList.add('no3d'); document.getElementById('hint').hidden = true; }
+
+const WA = '5511927515032';
+const chat = document.getElementById('chat');
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+const fast = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+async function owlSays(text){
+  const row = document.createElement('div'); row.className = 'msg';
+  row.innerHTML = '<img src="owl-know.png" alt=""><div class="bubble typing"><span></span><span></span><span></span></div>';
+  chat.append(row);
+  await sleep(fast ? 0 : 650);
+  const b = row.querySelector('.bubble'); b.className = 'bubble'; b.textContent = text;
+}
+function meSays(text){ const d = document.createElement('div'); d.className = 'me'; d.textContent = text; chat.append(d); }
+function ask(options){
+  return new Promise(res => {
+    const g = document.createElement('div'); g.className = 'chips'; g.setAttribute('role','group');
+    options.forEach(o => { const b = document.createElement('button'); b.className = 'chip'; b.textContent = o.label; b.onclick = () => { g.remove(); meSays(o.label); res(o); }; g.append(b); });
+    chat.append(g);
+  });
+}
+
+const SERV = {
+  diag: { t: 'Diagnóstico', line: 'Primeiro eu olho tudo e te digo onde está travando.' },
+  post: { t: 'Um post por dia', line: 'Seu Instagram vivo todo dia. Você aprova, a Owen posta.' },
+  site: { t: 'Site para comércio', line: 'Uma página no seu nome, pronta para o Google.' }
+};
+
+async function run(){
+  chat.innerHTML = '';
+  await owlSays('Me responde 2 coisas e eu te digo por onde começar.');
+  const neg = await ask([{label:'Comércio'},{label:'Restaurante'},{label:'Saúde'},{label:'Beleza'},{label:'Serviços'},{label:'Outro'}]);
+  owl.react('nod');
+  await owlSays('Boa. O que mais te incomoda hoje?');
+  const dor = await ask([
+    {label:'Ninguém me acha no Google', s:'site'},
+    {label:'Meu Instagram está parado', s:'post'},
+    {label:'Não tenho site', s:'site'},
+    {label:'Não sei por onde começar', s:'diag'}
+  ]);
+  owl.react('tilt');
+  await owlSays('Hmm… já sei.');
+  owl.react('spin');
+  await sleep(fast ? 0 : 500);
+  const s = SERV[dor.s];
+  const msg = `Oi, Owen! Tenho ${neg.label === 'Outro' ? 'um negócio' : 'um negócio de ' + neg.label.toLowerCase()} e ${dor.label.charAt(0).toLowerCase() + dor.label.slice(1)}. Quero saber do ${s.t.toLowerCase()}.`;
+  const card = document.createElement('div'); card.className = 'result';
+  card.innerHTML = `<small>Comece por</small><h3></h3><a class="cta" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>Chamar no WhatsApp</a><button class="again" type="button">recomeçar</button>`;
+  card.querySelector('h3').textContent = s.t;
+  card.querySelector('.cta').href = `https://wa.me/${WA}?text=${encodeURIComponent(msg)}`;
+  card.querySelector('.again').onclick = run;
+  await owlSays(s.line);
+  chat.append(card);
+  owl.react('glint');
+}
+run();
+
+// cartões com inclinação 3D e reação do Owl
+document.querySelectorAll('.card').forEach(c => {
+  c.addEventListener('pointermove', e => {
+    const r = c.getBoundingClientRect(), x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
+    c.style.transform = `rotateY(${(x - .5) * 14}deg) rotateX(${(.5 - y) * 12}deg)`;
+    c.style.setProperty('--mx', x * 100 + '%'); c.style.setProperty('--my', y * 100 + '%');
+  });
+  c.addEventListener('pointerleave', () => { c.style.transform = ''; });
+  c.addEventListener('pointerenter', () => owl.react(c.dataset.react));
+});
+
+// medir cliques no WhatsApp (GA4/Pixel quando forem ligados)
+window.dataLayer = window.dataLayer || [];
+document.addEventListener('click', e => { const a = e.target.closest && e.target.closest('a[href*="wa.me"]'); if (!a) return; window.dataLayer.push({ event: 'clique_whatsapp', origem: a.className }); }, true);
 </script>
 </body>
 </html>
