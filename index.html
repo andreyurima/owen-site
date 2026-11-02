@@ -35,8 +35,9 @@ header{position:relative;z-index:2;max-width:1160px;margin:0 auto;padding:18px 1
 .ig svg{width:18px;height:18px}
 .hero{position:relative;z-index:1;max-width:1160px;margin:0 auto;padding:0 16px 40px;display:grid;gap:8px}
 @media (min-width:900px){.hero{grid-template-columns:1.05fr .95fr;align-items:center;min-height:calc(100vh - 80px);padding-bottom:60px}}
-.stage{position:relative;display:grid;place-items:end center;height:min(62vh,560px);min-height:320px}
-.owlimg{max-height:100%;width:auto;filter:drop-shadow(0 30px 60px rgba(0,0,0,.45));-webkit-mask-image:linear-gradient(#000 82%,transparent);mask-image:linear-gradient(#000 82%,transparent);animation:float 6s ease-in-out infinite}
+.stage{position:relative;display:grid;place-items:end center;height:min(46vh,420px);min-height:300px;overflow:hidden}
+@media (min-width:900px){.stage{height:min(78vh,640px)}}
+.owlimg{height:100%;width:auto;max-width:100%;object-fit:contain;object-position:bottom;filter:drop-shadow(0 30px 60px rgba(0,0,0,.45));-webkit-mask-image:linear-gradient(#000 82%,transparent);mask-image:linear-gradient(#000 82%,transparent);animation:float 6s ease-in-out infinite}
 @keyframes float{50%{transform:translateY(-8px)}}
 h1{font:900 clamp(40px,7.4vw,78px)/.95 var(--font);letter-spacing:-.035em;margin:0 0 18px;color:var(--cream)}
 h1 em{font-style:normal;color:var(--lime)}
@@ -46,6 +47,10 @@ h1 em{font-style:normal;color:var(--lime)}
 .bubble{background:var(--bg2);border:1px solid var(--line);padding:12px 16px;border-radius:20px 20px 20px 6px;font-size:18px}
 .me{align-self:flex-end;background:var(--lime);color:var(--bg);border-radius:20px 20px 6px 20px;padding:10px 16px;font-weight:700;animation:in .25s ease-out both}
 .chips{display:flex;flex-wrap:wrap;gap:8px;padding-left:44px;animation:in .35s .1s ease-out both}
+.nameform input{flex:1 1 220px;min-width:0;background:var(--bg2);color:var(--ink);border:1.5px solid rgba(227,239,38,.55);border-radius:999px;padding:12px 16px;font:600 16px/1.2 var(--font)}
+.nameform input:focus{outline:3px solid var(--lime);outline-offset:2px}
+.chip.on{background:var(--lime);color:var(--bg)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 .chip{background:transparent;color:var(--ink);border:1.5px solid rgba(227,239,38,.55);padding:11px 15px;border-radius:999px;cursor:pointer;font-weight:700;font-size:15.5px;transition:transform .15s,background .15s,color .15s}
 .chip:hover{background:var(--lime);color:var(--bg);transform:translateY(-2px)}
 .chip:focus-visible,.cta:focus-visible,.card:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
@@ -120,7 +125,7 @@ footer .links{display:flex;gap:10px;flex-wrap:wrap}
 </svg>
 
 <script type="module">
-const owl = { react(){} };
+const owl = { react(){} }; // reações ficam para uma versão animada da imagem
 
 const WA = '5511927515032';
 const chat = document.getElementById('chat');
@@ -144,29 +149,47 @@ function ask(options){
 }
 
 const SERV = {
-  diag: { t: 'Diagnóstico', line: 'Primeiro eu olho tudo e te digo onde está travando.' },
-  post: { t: 'Um post por dia', line: 'Seu Instagram vivo todo dia. Você aprova, a Owen posta.' },
-  site: { t: 'Site para comércio', line: 'Uma página no seu nome, pronta para o Google.' }
+  A: { t: 'Perfil no Google + plaquinha de avaliação', line: 'Você aparece no mapa, e o cliente avalia encostando o celular na plaquinha.' },
+  B: { t: 'Um post por dia', line: 'Seu Instagram vivo todo dia. Você aprova, e a Owen posta.' },
+  C: { t: 'Atendimento com IA no WhatsApp', line: 'A IA responde o básico na hora e passa o resto para você.' },
+  D: { t: 'Funil de vendas e follow-up', line: 'Cada orçamento ganha um próximo passo, e nenhum cliente fica esquecido.' },
+  E: { t: 'Agenda online com lembrete', line: 'O cliente marca sozinho e recebe lembrete um dia antes.' },
+  F: { t: 'CRM simples', line: 'Todo cliente anotado num lugar só, com o histórico junto.' },
+  G: { t: 'Pós-venda e programa de indicação', line: 'Quem já comprou volta e ainda traz mais gente.' },
+  H: { t: 'Automações sem programar', line: 'O que é repetitivo passa a rodar sozinho, e você ganha tempo.' },
+  I: { t: 'Site para comércio', line: 'Uma página no seu nome, feita para o celular e para o Google.' },
+  J: { t: 'Tráfego pago medido', line: 'Anúncio com cada contato medido, do clique até o WhatsApp.' },
+  K: { t: 'Diagnóstico', line: 'Primeiro eu olho tudo e te digo onde está travando.' }
 };
+const DORES = [
+  ['Ninguém me acha no Google','A'], ['Tenho poucas avaliações','A'], ['Meu Instagram está parado','B'],
+  ['Recebo mensagem e não dou conta de responder','C'], ['O cliente pede orçamento e some','D'], ['Minha agenda é bagunçada','E'],
+  ['Não sei quem são meus clientes','F'], ['O cliente compra uma vez e não volta','G'], ['Faço tudo na mão e perco tempo','H'],
+  ['Não tenho site','I'], ['Anúncio que não traz cliente','J'], ['O concorrente aparece mais que eu','A'],
+  ['Perco venda fora do horário','C'], ['Quero vender mais para quem já é cliente','G'], ['Não sei por onde começar','K']
+];
+
+function askName(){
+  return new Promise(res => {
+    const f = document.createElement('form'); f.className = 'chips nameform';
+    f.innerHTML = '<label for="empresa" class="sr">Nome da empresa</label><input id="empresa" name="empresa" autocomplete="organization" placeholder="Nome da sua empresa" maxlength="60" required><button class="chip on" type="submit">Continuar →</button>';
+    f.addEventListener('submit', e => { e.preventDefault(); const v = f.empresa.value.trim(); if (!v) return; f.remove(); meSays(v); res(v); });
+    chat.append(f); f.empresa.focus({ preventScroll: true });
+  });
+}
 
 async function run(){
   chat.innerHTML = '';
-  await owlSays('Me responde 2 coisas e eu te digo por onde começar.');
-  const neg = await ask([{label:'Comércio'},{label:'Restaurante'},{label:'Saúde'},{label:'Beleza'},{label:'Serviços'},{label:'Outro'}]);
+  await owlSays('Me responde 2 coisas e eu te digo por onde começar. Qual é o nome da sua empresa?');
+  const empresa = await askName();
   owl.react('nod');
-  await owlSays('Boa. O que mais te incomoda hoje?');
-  const dor = await ask([
-    {label:'Ninguém me acha no Google', s:'site'},
-    {label:'Meu Instagram está parado', s:'post'},
-    {label:'Não tenho site', s:'site'},
-    {label:'Não sei por onde começar', s:'diag'}
-  ]);
+  await owlSays(`Prazer, ${empresa}! O que mais te incomoda hoje?`);
+  const dor = await ask(DORES.map(([label, s]) => ({ label, s })));
   owl.react('tilt');
   await owlSays('Hmm… já sei.');
-  owl.react('spin');
-  await sleep(fast ? 0 : 500);
+  await sleep(fast ? 0 : 400);
   const s = SERV[dor.s];
-  const msg = `Oi, Owen! Tenho ${neg.label === 'Outro' ? 'um negócio' : 'um negócio de ' + neg.label.toLowerCase()} e ${dor.label.charAt(0).toLowerCase() + dor.label.slice(1)}. Quero saber do ${s.t.toLowerCase()}.`;
+  const msg = `Oi, Owen! Sou da ${empresa}. ${dor.label}. Quero saber de: ${s.t}.`;
   const card = document.createElement('div'); card.className = 'result';
   card.innerHTML = `<small>Comece por</small><h3></h3><a class="cta" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>Chamar no WhatsApp</a><button class="again" type="button">recomeçar</button>`;
   card.querySelector('h3').textContent = s.t;
@@ -174,7 +197,6 @@ async function run(){
   card.querySelector('.again').onclick = run;
   await owlSays(s.line);
   chat.append(card);
-  owl.react('glint');
 }
 run();
 
