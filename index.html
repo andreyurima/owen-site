@@ -3,132 +3,217 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Owen · Plaquinha, site e anúncio para pequenos negócios</title>
-<meta name="description" content="Plaquinha de avaliação, landing page, site e anúncios para pequenos negócios de todo o Brasil. Fale com a Owen no WhatsApp.">
-<meta property="og:title" content="Owen · Plaquinha, site e anúncio para pequenos negócios">
-<meta property="og:description" content="Plaquinha de avaliação, landing page, site e anúncios. Tudo no seu nome, medido e mostrado no seu celular.">
+<title>Owen · Conheça o Owl</title>
+<meta name="description" content="Responda 2 perguntas para o Owl e descubra por onde seu negócio começa: diagnóstico, um post por dia ou site para comércio. Fale com a Owen no WhatsApp.">
+<meta property="og:title" content="Owen · Conheça o Owl">
+<meta property="og:description" content="A coruja da Owen te diz por onde seu negócio começa. Diagnóstico, um post por dia e site para comércio.">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Owen">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://andreyurima.github.io/owen-site/">
 <meta property="og:image" content="https://andreyurima.github.io/owen-site/og.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#2a1640">
+<meta name="theme-color" content="#06231d">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Owen","url":"https://andreyurima.github.io/owen-site/","image":"https://andreyurima.github.io/owen-site/og.png","telephone":"+55 11 92751-5032","areaServed":{"@type":"Country","name":"Brasil"}}</script>
+<link rel="canonical" href="https://andreyurima.github.io/owen-site/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Owen","description":"Agência de marketing para pequenos negócios: diagnóstico, um post por dia e site para comércio.","url":"https://andreyurima.github.io/owen-site/","image":"https://andreyurima.github.io/owen-site/og.png","logo":"https://andreyurima.github.io/owen-site/owl-know.png","telephone":"+55 11 92751-5032","sameAs":["https://www.instagram.com/owenstrategy/"],"areaServed":{"@type":"Country","name":"Brasil"}}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&display=swap">
 <style>
-:root{--bg:#efeafc;--panel:#ffffff;--ink:#2a1640;--muted:#6c5d82;--me:#2a1640;--meink:#ffffff;--mint:#3fd0a4;--line:#ddd3f2;--font:"Rubik",system-ui,sans-serif;color-scheme:light}
-@media (prefers-color-scheme:dark){:root{--bg:#170d24;--panel:#231737;--ink:#f1eafc;--muted:#b3a5c9;--me:#3fd0a4;--meink:#10241d;--line:#3a2b52;color-scheme:dark}}
+:root{--bg:#06231d;--bg2:#0b2f26;--suit:#0f4a33;--cream:#d6cdbe;--lime:#e3ef26;--ink:#f4f1e8;--muted:#9fb3a9;--line:rgba(214,205,190,.14);--font:"Archivo",system-ui,sans-serif;color-scheme:dark}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.5 var(--font)}
-.wrap{max-width:680px;margin:0 auto;padding:0 16px 120px}
-.head{display:flex;align-items:center;gap:12px;padding:18px 0;border-bottom:1px solid var(--line)}
-.av{width:46px;height:46px;border-radius:50%;background:var(--ink);color:var(--bg);display:grid;place-items:center;font:800 20px/1 var(--font);flex:none}
-.head b{display:block;font-weight:700}
-.head small{color:var(--muted)}
-.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--mint);margin-right:6px}
-h1{font:800 clamp(30px,7vw,46px)/1.05 var(--font);letter-spacing:-.02em;margin:26px 0 6px;text-wrap:balance}
-.intro{color:var(--muted);margin:0 0 20px}
-.chat{display:flex;flex-direction:column;gap:10px}
-.b{max-width:86%;padding:12px 16px;border-radius:18px;background:var(--panel);border:1px solid var(--line);box-shadow:0 2px 0 var(--line)}
-.b.them{border-bottom-left-radius:6px}
-.b strong{display:block;font:800 22px/1.15 var(--font);margin-top:6px}
-.b ul{margin:6px 0 0;padding-left:18px}
-.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end;margin-top:4px}
-.chip{font:500 15px/1 var(--font);padding:12px 16px;border-radius:999px;border:2px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;text-decoration:none}
-.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
-.chip:focus-visible,.send:focus-visible{outline:3px solid var(--mint);outline-offset:2px}
-.trust{margin-top:34px;display:grid;gap:10px}
-.trust div{display:flex;gap:12px;align-items:flex-start;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px}
-.trust i{font-style:normal;font-weight:800;color:var(--mint);flex:none}
-.bar{position:fixed;left:0;right:0;bottom:0;background:var(--bg);border-top:1px solid var(--line);padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));z-index:5}
-.bar .in{max-width:680px;margin:0 auto;display:flex;gap:10px;align-items:center}
-.preview{flex:1;min-width:0;background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:12px 16px;font-size:14.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.send{flex:none;background:var(--mint);color:#10241d;font:800 15.5px/1 var(--font);text-decoration:none;padding:14px 18px;border-radius:999px}
-h2{font:800 24px/1.15 var(--font);letter-spacing:-.01em;margin:40px 0 12px}
-.steps{list-style:none;margin:0;padding:0;display:grid;gap:10px;counter-reset:s}
-.steps li{counter-increment:s;display:flex;gap:12px;align-items:flex-start;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px}
-.steps li::before{content:counter(s);flex:none;width:28px;height:28px;border-radius:50%;background:var(--ink);color:var(--bg);display:grid;place-items:center;font-weight:800;font-size:15px}
-.services{display:grid;gap:10px}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px}
-.card h3{margin:0 0 6px;font:700 18px/1.2 var(--font)}
-.card ul{margin:0 0 12px;padding-left:18px;color:var(--muted)}
-.card .chip{display:inline-block;padding:10px 14px;font-size:14.5px}
-@media (min-width:600px){.services{grid-template-columns:1fr 1fr}}
-footer{margin-top:30px;font-size:13.5px;color:var(--muted);text-align:center}
-footer a{color:inherit}
-@media (prefers-reduced-motion:no-preference){.b.new{animation:pop .25s ease-out}@keyframes pop{from{transform:translateY(6px)}to{transform:none}}}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:500 17px/1.45 var(--font);overflow-x:hidden}
+a{color:inherit}
+button{font:inherit}
+.grain{position:fixed;inset:0;pointer-events:none;z-index:0;background:radial-gradient(60vmax 60vmax at 75% 20%,rgba(227,239,38,.10),transparent 60%),radial-gradient(50vmax 50vmax at 10% 90%,rgba(15,74,51,.55),transparent 60%)}
+header{position:relative;z-index:2;max-width:1160px;margin:0 auto;padding:18px 16px;display:flex;justify-content:space-between;align-items:center}
+.logo{display:flex;gap:10px;align-items:center;font:900 22px/1 var(--font);letter-spacing:-.02em;text-decoration:none}
+.logo img{width:36px;height:36px;border-radius:50%;object-fit:cover;object-position:50% 22%;background:var(--suit);border:2px solid var(--lime)}
+.ig{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:15px;padding:10px 14px;border:1.5px solid var(--line);border-radius:999px}
+.ig svg{width:18px;height:18px}
+.hero{position:relative;z-index:1;max-width:1160px;margin:0 auto;padding:0 16px 40px;display:grid;gap:8px}
+@media (min-width:900px){.hero{grid-template-columns:1.05fr .95fr;align-items:center;min-height:calc(100vh - 80px);padding-bottom:60px}}
+.stage{position:relative;display:grid;place-items:end center;height:min(46vh,420px);min-height:300px;overflow:hidden}
+@media (min-width:900px){.stage{height:min(78vh,640px)}}
+.owlimg{height:100%;width:auto;max-width:100%;object-fit:contain;object-position:bottom;filter:drop-shadow(0 30px 60px rgba(0,0,0,.45));-webkit-mask-image:linear-gradient(#000 82%,transparent);mask-image:linear-gradient(#000 82%,transparent);animation:float 6s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-8px)}}
+h1{font:900 clamp(40px,7.4vw,78px)/.95 var(--font);letter-spacing:-.035em;margin:0 0 18px;color:var(--cream)}
+h1 em{font-style:normal;color:var(--lime)}
+.chat{display:flex;flex-direction:column;gap:10px;min-height:250px}
+.msg{display:flex;gap:10px;align-items:flex-end;max-width:520px;animation:in .35s cubic-bezier(.2,.9,.3,1.2) both}
+.msg img{width:34px;height:34px;border-radius:50%;object-fit:cover;object-position:50% 22%;flex:none;background:var(--suit)}
+.bubble{background:var(--bg2);border:1px solid var(--line);padding:12px 16px;border-radius:20px 20px 20px 6px;font-size:18px}
+.me{align-self:flex-end;background:var(--lime);color:var(--bg);border-radius:20px 20px 6px 20px;padding:10px 16px;font-weight:700;animation:in .25s ease-out both}
+.chips{display:flex;flex-wrap:wrap;gap:8px;padding-left:44px;animation:in .35s .1s ease-out both}
+.nameform input{flex:1 1 220px;min-width:0;background:var(--bg2);color:var(--ink);border:1.5px solid rgba(227,239,38,.55);border-radius:999px;padding:12px 16px;font:600 16px/1.2 var(--font)}
+.nameform input:focus{outline:3px solid var(--lime);outline-offset:2px}
+.chip.on{background:var(--lime);color:var(--bg)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.chip{background:transparent;color:var(--ink);border:1.5px solid rgba(227,239,38,.55);padding:11px 15px;border-radius:999px;cursor:pointer;font-weight:700;font-size:15.5px;transition:transform .15s,background .15s,color .15s}
+.chip:hover{background:var(--lime);color:var(--bg);transform:translateY(-2px)}
+.chip:focus-visible,.cta:focus-visible,.card:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
+.result{margin-left:44px;max-width:476px;background:linear-gradient(140deg,var(--suit),var(--bg2));border:1px solid rgba(227,239,38,.4);border-radius:22px;padding:20px;animation:pop .5s cubic-bezier(.2,.9,.3,1.3) both}
+.result small{color:var(--lime);font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:12px}
+.result h3{font:900 30px/1 var(--font);letter-spacing:-.02em;margin:6px 0 14px;color:var(--cream)}
+.cta{display:inline-flex;align-items:center;gap:10px;background:var(--lime);color:var(--bg);font:800 17px/1 var(--font);padding:16px 22px;border-radius:999px;text-decoration:none;box-shadow:0 10px 30px -10px rgba(227,239,38,.6);transition:transform .15s}
+.cta:hover{transform:translateY(-2px) scale(1.02)}
+.cta svg{width:22px;height:22px}
+.again{background:none;border:0;color:var(--muted);text-decoration:underline;cursor:pointer;margin-left:14px;font-size:15px}
+@keyframes in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes pop{from{opacity:0;transform:scale(.9) translateY(10px)}to{opacity:1;transform:none}}
+.typing span{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--muted);margin:0 2px;animation:dot 1s infinite}
+.typing span:nth-child(2){animation-delay:.15s}.typing span:nth-child(3){animation-delay:.3s}
+@keyframes dot{0%,80%,100%{opacity:.25;transform:none}40%{opacity:1;transform:translateY(-3px)}}
+section.svc{position:relative;z-index:1;max-width:1160px;margin:0 auto;padding:40px 16px 70px}
+.svc h2{font:900 clamp(30px,5vw,48px)/1 var(--font);letter-spacing:-.03em;margin:0 0 26px;color:var(--cream)}
+.svc h2 em{font-style:normal;color:var(--lime)}
+.cards{display:grid;gap:16px;perspective:900px}
+@media (min-width:760px){.cards{grid-template-columns:repeat(3,1fr)}}
+.card{position:relative;display:block;text-decoration:none;background:var(--bg2);border:1px solid var(--line);border-radius:24px;padding:24px;min-height:220px;transform-style:preserve-3d;transition:transform .2s ease-out,border-color .2s;overflow:hidden}
+.card:hover{border-color:rgba(227,239,38,.6)}
+.card .n{font:900 64px/1 var(--font);color:transparent;-webkit-text-stroke:1.5px rgba(227,239,38,.55);transform:translateZ(30px)}
+.card h3{font:900 26px/1.05 var(--font);margin:18px 0 8px;letter-spacing:-.02em;transform:translateZ(40px);color:var(--cream)}
+.card p{margin:0;color:var(--muted);transform:translateZ(20px)}
+.card .go{position:absolute;right:20px;top:22px;width:44px;height:44px;border-radius:50%;background:var(--lime);color:var(--bg);display:grid;place-items:center;font-weight:900;transform:translateZ(50px);transition:transform .2s}
+.card:hover .go{transform:translateZ(50px) rotate(-45deg)}
+.card .shine{position:absolute;inset:0;pointer-events:none;background:radial-gradient(300px 300px at var(--mx,50%) var(--my,50%),rgba(227,239,38,.14),transparent 60%)}
+footer{position:relative;z-index:1;border-top:1px solid var(--line);max-width:1160px;margin:0 auto;padding:28px 16px 100px;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;color:var(--muted);font-size:14px}
+footer .links{display:flex;gap:10px;flex-wrap:wrap}
+.float{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:9;width:60px;height:60px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+.float svg{width:30px;height:30px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
-<div class="wrap">
-<div class="head"><div class="av" aria-hidden="true">O</div><div><b>Owen</b><small><span class="dot"></span>Sites, plaquinhas e anúncios · todo o Brasil</small></div></div>
-<h1>Me conta o que você tem que eu te digo o que resolve.</h1>
-<p class="intro">Escolha uma opção. No fim, sua mensagem sai pronta para o WhatsApp da Owen.</p>
-<div class="chips" style="justify-content:flex-start;margin-bottom:18px"><a class="chip" href="#chat">Tenho um comércio</a><a class="chip" href="https://wa.me/5511927515032?text=Ol%C3%A1%2C%20Owen%21%20Quero%20crescer%20minha%20empresa%20e%20agendar%20um%20diagn%C3%B3stico." target="_blank" rel="noopener">Quero crescer minha empresa</a></div>
-<div class="chat" id="chat" aria-live="polite">
-  <div class="b them">Oi! Aqui é a Owen. Qual é o seu negócio?</div>
-  <div class="chips" role="group" aria-label="Tipo de negócio" id="c1">
-    <button class="chip" data-v="Loja ou comércio" aria-pressed="true">Loja ou comércio</button>
-    <button class="chip" data-v="Restaurante ou lanchonete" aria-pressed="false">Restaurante</button>
-    <button class="chip" data-v="Clínica ou consultório" aria-pressed="false">Clínica</button>
-    <button class="chip" data-v="Barbearia ou salão" aria-pressed="false">Barbearia</button>
-    <button class="chip" data-v="Outro tipo de negócio" aria-pressed="false">Outro</button>
+<div class="grain" aria-hidden="true"></div>
+<header>
+  <a class="logo" href="#"><img src="owl-know.png" alt="">Owen</a>
+  <a class="ig" href="https://www.instagram.com/owenstrategy/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-ig"/></svg>@owenstrategy</a>
+</header>
+
+<main>
+<div class="hero">
+  <div class="stage"><img class="owlimg" src="owl-know.png" alt="Owl, a coruja da Owen" width="600" height="750"></div>
+  <div>
+    <h1>Oi, eu sou o <em>Owl.</em></h1>
+    <div class="chat" id="chat" aria-live="polite"></div>
   </div>
-  <div class="b them">E o que você mais quer agora?</div>
-  <div class="chips" role="group" aria-label="Objetivo" id="c2">
-    <button class="chip" data-k="aval" aria-pressed="true">Mais avaliação no Google</button>
-    <button class="chip" data-k="pag" aria-pressed="false">Uma página com WhatsApp</button>
-    <button class="chip" data-k="site" aria-pressed="false">Site completo</button>
-    <button class="chip" data-k="midia" aria-pressed="false">Redes e anúncios</button>
-    <button class="chip" data-k="diag" aria-pressed="false">Ainda não sei</button>
+</div>
+
+<section class="svc" id="servicos">
+  <h2>O que a <em>Owen</em> faz.</h2>
+  <div class="cards">
+    <a class="card" data-react="tilt" href="https://wa.me/5511927515032?text=Oi%2C%20Owen%21%20Quero%20vender%20mais." target="_blank" rel="noopener"><span class="shine"></span><span class="go">→</span><div class="n">01</div><h3>Vender mais</h3><p>Atendimento, orçamento que vira venda, pós-venda e indicação.</p></a>
+    <a class="card" data-react="nod" href="https://wa.me/5511927515032?text=Oi%2C%20Owen%21%20Quero%20ser%20encontrado%20por%20mais%20clientes." target="_blank" rel="noopener"><span class="shine"></span><span class="go">→</span><div class="n">02</div><h3>Ser encontrado</h3><p>Google, Instagram, site e anúncio que traz cliente.</p></a>
+    <a class="card" data-react="spin" href="https://wa.me/5511927515032?text=Oi%2C%20Owen%21%20Quero%20organizar%20e%20automatizar%20meu%20neg%C3%B3cio." target="_blank" rel="noopener"><span class="shine"></span><span class="go">→</span><div class="n">03</div><h3>Organizar e automatizar</h3><p>Agenda, cadastro de clientes, IA e rotinas que rodam sozinhas.</p></a>
   </div>
-  <div class="b them new" id="ans"></div>
-</div>
-<h2>Como funciona</h2>
-<ol class="steps">
-  <li><span>Você escolhe o que precisa e manda a mensagem pronta no WhatsApp.</span></li>
-  <li><span>A Owen responde, entende o seu negócio e combina os detalhes com você.</span></li>
-  <li><span>A entrega é mostrada no seu celular, funcionando, com tudo no seu nome.</span></li>
-</ol>
-<h2 id="servicos">O que a Owen faz</h2>
-<div class="services" id="services"></div>
-<div class="trust">
-  <div><i>✓</i><span>Domínio, hospedagem e contas de anúncio ficam no seu nome.</span></div>
-  <div><i>✓</i><span>Entrega mostrada no seu celular, funcionando.</span></div>
-  <div><i>✓</i><span>Nenhum anúncio vai ao ar sem medir de onde veio cada contato.</span></div>
-</div>
-<footer>Owen · Atendimento em todo o Brasil · <a href="https://wa.me/5511927515032" target="_blank" rel="noopener">WhatsApp (11) 92751-5032</a></footer>
-</div>
-<div class="bar"><div class="in"><div class="preview" id="pv"></div><a class="send" id="send" href="https://wa.me/5511927515032" target="_blank" rel="noopener">Enviar no WhatsApp</a></div></div>
-<script>
-const offers={
- aval:{t:'Plaquinha de avaliação',d:['QR e chip NFC no seu balcão','Cliente encosta o celular e avalia no Google','Troca de destino sem reimprimir']},
- pag:{t:'Plaquinha + landing page',d:['Página com até 5 seções, feita para o celular','Botão de WhatsApp em destaque','A plaquinha aponta para ela']},
- site:{t:'Site institucional',d:['Até 6 páginas e Perfil da Empresa no Google','GA4 e Pixel ligados','Diagnóstico de antes e de depois']},
- midia:{t:'Redes + anúncios',d:['15 posts no mês','Gestão de tráfego pago','Verba paga por você, direto na plataforma']},
- diag:{t:'Diagnóstico do negócio',d:['A Owen olha seu Google, suas redes e seu site','Você sai sabendo o que fazer primeiro','Serve para quem ainda não sabe por onde começar']}};
-let negocio='Loja ou comércio',obj='aval';
-const ans=document.getElementById('ans'),pv=document.getElementById('pv'),send=document.getElementById('send');
-const wa=m=>'https://wa.me/5511927515032?text='+encodeURIComponent(m);
-const services=document.getElementById('services');
-Object.values(offers).forEach(o=>{const c=document.createElement('div');c.className='card';const h=document.createElement('h3');h.textContent=o.t;const ul=document.createElement('ul');o.d.forEach(x=>{const li=document.createElement('li');li.textContent=x;ul.appendChild(li)});const a=document.createElement('a');a.className='chip';a.target='_blank';a.rel='noopener';a.href=wa(`Olá, Owen! Quero saber mais sobre: ${o.t}.`);a.textContent='Quero este';c.append(h,ul,a);services.appendChild(c)});
-function render(){const o=offers[obj];ans.innerHTML='';const s=document.createElement('span');s.textContent='Para '+negocio.toLowerCase()+', o caminho é:';const pr=document.createElement('strong');pr.textContent=o.t;const ul=document.createElement('ul');o.d.forEach(x=>{const li=document.createElement('li');li.textContent=x;ul.appendChild(li)});ans.append(s,pr,ul);
- ans.classList.remove('new');void ans.offsetWidth;ans.classList.add('new');
- const msg=`Olá, Owen! Tenho ${negocio.toLowerCase()} e quero: ${o.t}.`;pv.textContent=msg;send.href=wa(msg);}
-function group(id,fn){const bs=[...document.querySelectorAll('#'+id+' .chip')];bs.forEach(b=>b.addEventListener('click',()=>{bs.forEach(x=>x.setAttribute('aria-pressed',x===b));fn(b);render();}));}
-group('c1',b=>negocio=b.dataset.v);group('c2',b=>obj=b.dataset.k);render();
-window.dataLayer=window.dataLayer||[];
-document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="wa.me"]');if(!a)return;
-var t='';try{t=decodeURIComponent((a.href.split('text=')[1]||'')).slice(0,120)}catch(_){}
-window.dataLayer.push({event:'clique_whatsapp',servico:t,pagina:document.title});
-if(typeof window.gtag==='function')window.gtag('event','clique_whatsapp',{servico:t});
-if(typeof window.fbq==='function')window.fbq('track','Contact',{content_name:t});},true);
+</section>
+</main>
+
+<footer>
+  <span>Owen · marketing para pequenos negócios</span>
+  <span class="links"><a class="ig" href="https://wa.me/5511927515032" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>(11) 92751-5032</a><a class="ig" href="https://www.instagram.com/owenstrategy/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-ig"/></svg>Instagram</a></span>
+</footer>
+
+<a class="float" href="https://wa.me/5511927515032?text=Oi%2C%20Owen%21%20Vim%20pelo%20site." target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg></a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3z"/></symbol>
+ <symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></g></symbol>
+</svg>
+
+<script type="module">
+const owl = { react(){} }; // reações ficam para uma versão animada da imagem
+
+const WA = '5511927515032';
+const chat = document.getElementById('chat');
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+const fast = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+async function owlSays(text){
+  const row = document.createElement('div'); row.className = 'msg';
+  row.innerHTML = '<img src="owl-know.png" alt=""><div class="bubble typing"><span></span><span></span><span></span></div>';
+  chat.append(row);
+  await sleep(fast ? 0 : 650);
+  const b = row.querySelector('.bubble'); b.className = 'bubble'; b.textContent = text;
+}
+function meSays(text){ const d = document.createElement('div'); d.className = 'me'; d.textContent = text; chat.append(d); }
+function ask(options){
+  return new Promise(res => {
+    const g = document.createElement('div'); g.className = 'chips'; g.setAttribute('role','group');
+    options.forEach(o => { const b = document.createElement('button'); b.className = 'chip'; b.textContent = o.label; b.onclick = () => { g.remove(); meSays(o.label); res(o); }; g.append(b); });
+    chat.append(g);
+  });
+}
+
+const SERV = {
+  A: { t: 'Perfil no Google + plaquinha de avaliação', line: 'Você aparece no mapa, e o cliente avalia encostando o celular na plaquinha.' },
+  B: { t: 'Um post por dia', line: 'Seu Instagram vivo todo dia. Você aprova, e a Owen posta.' },
+  C: { t: 'Atendimento com IA no WhatsApp', line: 'A IA responde o básico na hora e passa o resto para você.' },
+  D: { t: 'Funil de vendas e follow-up', line: 'Cada orçamento ganha um próximo passo, e nenhum cliente fica esquecido.' },
+  E: { t: 'Agenda online com lembrete', line: 'O cliente marca sozinho e recebe lembrete um dia antes.' },
+  F: { t: 'CRM simples', line: 'Todo cliente anotado num lugar só, com o histórico junto.' },
+  G: { t: 'Pós-venda e programa de indicação', line: 'Quem já comprou volta e ainda traz mais gente.' },
+  H: { t: 'Automações sem programar', line: 'O que é repetitivo passa a rodar sozinho, e você ganha tempo.' },
+  I: { t: 'Site para comércio', line: 'Uma página no seu nome, feita para o celular e para o Google.' },
+  J: { t: 'Tráfego pago medido', line: 'Anúncio com cada contato medido, do clique até o WhatsApp.' },
+  K: { t: 'Diagnóstico', line: 'Primeiro eu olho tudo e te digo onde está travando.' }
+};
+const DORES = [
+  ['Ninguém me acha no Google','A'], ['Tenho poucas avaliações','A'], ['Meu Instagram está parado','B'],
+  ['Recebo mensagem e não dou conta de responder','C'], ['O cliente pede orçamento e some','D'], ['Minha agenda é bagunçada','E'],
+  ['Não sei quem são meus clientes','F'], ['O cliente compra uma vez e não volta','G'], ['Faço tudo na mão e perco tempo','H'],
+  ['Não tenho site','I'], ['Anúncio que não traz cliente','J'], ['O concorrente aparece mais que eu','A'],
+  ['Perco venda fora do horário','C'], ['Quero vender mais para quem já é cliente','G'], ['Não sei por onde começar','K']
+];
+
+function askName(){
+  return new Promise(res => {
+    const f = document.createElement('form'); f.className = 'chips nameform';
+    f.innerHTML = '<label for="empresa" class="sr">Nome da empresa</label><input id="empresa" name="empresa" autocomplete="organization" placeholder="Nome da sua empresa" maxlength="60" required><button class="chip on" type="submit">Continuar →</button>';
+    f.addEventListener('submit', e => { e.preventDefault(); const v = f.empresa.value.trim(); if (!v) return; f.remove(); meSays(v); res(v); });
+    chat.append(f); f.empresa.focus({ preventScroll: true });
+  });
+}
+
+async function run(){
+  chat.innerHTML = '';
+  await owlSays('Me responde 2 coisas e eu te digo por onde começar. Qual é o nome da sua empresa?');
+  const empresa = await askName();
+  owl.react('nod');
+  await owlSays(`Prazer, ${empresa}! O que mais te incomoda hoje?`);
+  const dor = await ask(DORES.map(([label, s]) => ({ label, s })));
+  owl.react('tilt');
+  await owlSays('Hmm… já sei.');
+  await sleep(fast ? 0 : 400);
+  const s = SERV[dor.s];
+  const msg = `Oi, Owen! Sou da ${empresa}. ${dor.label}. Quero saber de: ${s.t}.`;
+  const card = document.createElement('div'); card.className = 'result';
+  card.innerHTML = `<small>Comece por</small><h3></h3><a class="cta" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>Chamar no WhatsApp</a><button class="again" type="button">recomeçar</button>`;
+  card.querySelector('h3').textContent = s.t;
+  card.querySelector('.cta').href = `https://wa.me/${WA}?text=${encodeURIComponent(msg)}`;
+  card.querySelector('.again').onclick = run;
+  await owlSays(s.line);
+  chat.append(card);
+}
+run();
+
+// cartões com inclinação 3D e reação do Owl
+document.querySelectorAll('.card').forEach(c => {
+  c.addEventListener('pointermove', e => {
+    const r = c.getBoundingClientRect(), x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
+    c.style.transform = `rotateY(${(x - .5) * 14}deg) rotateX(${(.5 - y) * 12}deg)`;
+    c.style.setProperty('--mx', x * 100 + '%'); c.style.setProperty('--my', y * 100 + '%');
+  });
+  c.addEventListener('pointerleave', () => { c.style.transform = ''; });
+  c.addEventListener('pointerenter', () => owl.react(c.dataset.react));
+});
+
+// medir cliques no WhatsApp (GA4/Pixel quando forem ligados)
+window.dataLayer = window.dataLayer || [];
+document.addEventListener('click', e => { const a = e.target.closest && e.target.closest('a[href*="wa.me"]'); if (!a) return; window.dataLayer.push({ event: 'clique_whatsapp', origem: a.className }); }, true);
 </script>
 </body>
 </html>
